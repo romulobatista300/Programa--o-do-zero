@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tp-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;900&display=swap" rel="stylesheet">
+    <title>Starbucks</title>
+</head>
+
+<body>
+    <div class="circulo"></div>
+
+    <img src="./assets/logo.png" class="logo">
+
+    <div class="conteudo">
+        <div class="caixa-texto">
+            <h2>It's not just Coffe <br> It's <span>Starbucks</span></h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A tempora quo amet. Delectus molestiae
+                assumenda
+                illum ea tempore sapiente, nemo tempora temporibus incidunt, quod perferendis architecto, facilis
+                eligendi
+                officia! Vitae!</p>
+            <button>Learm More</button>
+            <link rel="stylesheet" href="./style.css">
+        </div>
+
+        <div class="caixa-imagem">
+            <img src="./assets/img1.png" class="starbucks">
+        </div>
+
+    </div>
+
+    <div class="alinhar-button">
+        <img src="./assets/thumb1.png" class="button-menu" onclick="trocarImagem('./assets/img1.png'); trocaCor('#017143')">
+        <img src="./assets/thumb2.png" class="button-menu" onclick="trocarImagem('./assets/img2.png');trocaCor('#eb7495')">
+        <img src="./assets/thumb3.png" class="button-menu" onclick="trocarImagem('./assets/img3.png');trocaCor('#b752b1')">
+    </div>
+
+</body>
+<script>
+
+    const trocar = document.querySelector(".starbucks")
+    const cor = document.querySelector(".circulo")
+
+    function trocarImagem(endereco) {
+        trocar.src = endereco
+    }
+
+    function trocaCor(mudaCor){
+cor.style.background = mudaCor
+    }
+</script>
+
+</html>
